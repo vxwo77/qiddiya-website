@@ -13,12 +13,36 @@
             line-height: 1.8;
         }
 
+        /* الهيدر بخلفية صورة + طبقة تعتيم */
         header {
-            background-color: #4a148c;
+            background: url('header.png') center/cover no-repeat;
             color: white;
-            padding: 25px;
+            padding: 80px 20px;
             text-align: center;
-            position: relative; /* مهم عشان زر EN يثبت في الهيدر */
+            position: relative;
+        }
+
+        /* طبقة التعتيم فوق الصورة */
+        header::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.45); /* درجة التعتيم */
+            z-index: 1;
+        }
+
+        /* النص فوق التعتيم */
+        header h1, header p, .go-btn, .lang-btn {
+            position: relative;
+            z-index: 2;
+        }
+
+        /* وضوح النص */
+        header h1, header p {
+            text-shadow: 0 0 10px rgba(0,0,0,0.8);
         }
 
         section {
@@ -34,7 +58,7 @@
             color: #4a148c;
         }
 
-        /* زر الانتقال داخل الصفحة */
+        /* زر الانتقال */
         .go-btn {
             display: inline-block;
             background: #4a148c;
@@ -98,7 +122,6 @@
 <body>
 
 <header>
-    <!-- زر EN يفتح الصفحة الإنجليزية -->
     <a href="qiddiya-en.html" class="lang-btn">EN</a>
 
     <h1>مشروع القدية</h1>
