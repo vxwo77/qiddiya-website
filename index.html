@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>مشروع القدية</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            line-height: 1.8;
+        }
+
+        header {
+            background-color: #4a148c;
+            color: white;
+            padding: 25px;
+            text-align: center;
+            position: relative; /* مهم عشان زر EN يثبت في الهيدر */
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px;
+            background: white;
+            border-radius: 12px;
+            animation: fadeIn 1s ease forwards;
+            opacity: 0;
+        }
+
+        h2 {
+            color: #4a148c;
+        }
+
+        /* زر الانتقال داخل الصفحة */
+        .go-btn {
+            display: inline-block;
+            background: #4a148c;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 18px;
+            margin-top: 15px;
+        }
+
+        .go-btn:hover {
+            background: #6a1b9a;
+        }
+
+        /* زر اللغة EN */
+        .lang-btn {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: white;
+            color: #4a148c;
+            padding: 8px 15px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .lang-btn:hover {
+            background: #f0e6ff;
+        }
+
+        /* الصور + الحركة */
+        .gallery img {
+            width: 100%;
+            max-width: 350px;
+            margin: 10px;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.08);
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        /* تأثير الدخول */
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <!-- زر EN يفتح الصفحة الإنجليزية -->
+    <a href="qiddiya-en.html" class="lang-btn">EN</a>
+
+    <h1>مشروع القدية</h1>
+    <p>وجهة المستقبل للترفيه والرياضة والثقافة في المملكة العربية السعودية</p>
+
+    <a href="#photos" class="go-btn">مشاهدة صور المشروع</a>
+</header>
+
+<section>
+    <h2>نبذة عن المشروع</h2>
+    <p>
+        مشروع القدية هو أحد المشاريع الضخمة في رؤية السعودية 2030، ويهدف ليكون عاصمة الترفيه والرياضة والفنون.
+        يقع المشروع غرب مدينة الرياض ويضم مرافق عالمية مثل مدن الألعاب، الملاعب الرياضية، المراكز الثقافية،
+        والمنتجعات السياحية.
+    </p>
+
+    <p>
+        يهدف المشروع إلى خلق بيئة متكاملة تجمع بين الترفيه والرياضة والثقافة، مع توفير فرص اقتصادية وسياحية ضخمة،
+        ليصبح واحداً من أهم الوجهات العالمية التي تستقطب الزوار من مختلف أنحاء العالم.
+    </p>
+</section>
+
+<section>
+    <h2>معلومات عن مشروع القدية</h2>
+
+    <p>
+        تم الإعلان عن مشروع القدية في عام 2017 كأحد أهم المشاريع الاستراتيجية ضمن رؤية السعودية 2030،
+        ويهدف إلى تطوير وجهة عالمية للترفيه والرياضة والفنون.
+    </p>
+
+    <p>
+        يشرف على المشروع صندوق الاستثمارات العامة، ويُعد المشروع أحد أكبر المشاريع التي يقودها الصندوق
+        لتعزيز الاقتصاد الوطني وتنويع مصادر الدخل.
+    </p>
+
+    <p>
+        تبلغ مساحة المشروع أكثر من 334 كيلومتر مربع، وتصل تكلفته التقديرية إلى عشرات المليارات،
+        نظرًا لضخامة المرافق الترفيهية والرياضية والثقافية التي سيتم إنشاؤها.
+    </p>
+
+    <p>
+        يهدف المشروع إلى استقطاب ملايين الزوار سنويًا، وتوفير آلاف الوظائف، وتعزيز جودة الحياة
+        في المملكة من خلال تقديم تجارب ترفيهية عالمية المستوى.
+    </p>
+</section>
+
+<section id="photos">
+    <h2>صور من مشروع القدية</h2>
+
+    <div class="gallery">
+        <img src="mali.jpg" alt="صورة مشروع القدية">
+        <img src="mali2.webp" alt="صورة مشروع القدية">
+        <img src="mali3.webp" alt="صورة مشروع القدية">
+        <img src="mali4.png" alt="صورة مشروع القدية">
+        <img src="mali5.jpeg" alt="صورة مشروع القدية">
+        <img src="mali6.jpg" alt="صورة مشروع القدية">
+    </div>
+</section>
+
+<section>
+    <h2>عمل الطالبة</h2>
+    <p>مليكة خالد الجهني</p>
+</section>
+
+</body>
+</html>
